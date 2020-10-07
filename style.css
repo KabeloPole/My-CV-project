@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*This is the main page Home styling section*/
+
+.main_page {
+    background: url(pexels-tyler-lastovich-997443.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main_page {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.myLogo {
+    padding: 5px;
+    height: auto;
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: white;
+    box-shadow: 2px 2px 12px rgb(0, 0, 0 0.4);
+    z-index: 1;
+}
+
+nav.sticky {
+    padding: 10px 50px;
+    background-color: white;
+}
+
+.myMenu {
+    display: flex;
+}
+
+.myMenu li a {
+    padding: 10px 15px;
+    color: yellowgreen;
+    font-size: 17px;
+}
+
+.myMenu li a:hover {
+    background-color: yellow;
+    color: grey !important;
+    font-weight: 600;
+    transition: all ease 0.2s;
+}
+
+.welcome {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 600px;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-30%, -50%);
+}
+
+.welcome p {
+    font-size: 20px;
+    color: rgba(240, 21, 21, 0.849);
+    font-weight: bold;
+}
+
+.welcome h1 {
+    font-size: 25px;
+    color: rgb(53, 206, 15);
+    margin-top: 10px;
+}
+
+.download_button,
+.title .MyVideo {
+    width: 240px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 211, 11);
+    color: grey;
+    font-weight: bold;
+    border: 2px solid rgb(211, 211, 11);
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 50px;
+    transition: all ease 0.5s;
+}
+
+.title .MyVideo {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.download_button,
+.title .MyVideo :hover {
+    color: rgb(211, 211, 11);
+    background: none;
+}
+
+.picture {
+    height: auto;
+    width: 300px;
+    display: flex;
+    position: absolute;
+    right: -50%;
+    top: -50px;
+}
+
+.social_media {
+    display: flex;
+    position: absolute;
+    left: 220px;
+    bottom: 50px;
+}
+
+.social_media a {
+    margin: 15px 25px;
+}
+
+.fa-yahoo {
+    color: purple;
+}
+
+.fa-instagram {
+    color: #e84393;
+}
+
+.fa-facebook {
+    color: blue;
+}
+
+.fa-linkedin-square {
+    color: #0097e6;
+}
+
+.far-university {
+    color: black;
+}
+
+.social_media a {
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 10px;
+    color: rgb(33, 230, 15);
+    border: 1px solid rgb(0, 205, 126);
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*This is My profile page styling section*/
+
+.myProfile {
+    background: url(pexels-photomix-company-518245.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.myProfile {
+    padding: 80px 35px;
+}
+
+.skills {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.myProfile h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: seagreen;
+    margin-bottom: 60px;
+    padding-bottom: 12px;
+}
+
+.myProfile .skills_learnt {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.myProfile .skills .left_heading p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.myProfile .skills .left_heading {
+    width: calc(50% - 30px);
+}
+
+.myProfile .skill .left_heading .skills_learnt {
+    font-size: 20px;
+    font-weight: 650px bold;
+    margin-bottom: 12px;
+}
+
+.myProfile .skill .left_heading .mySkills .size {
+    margin-bottom: 25px;
+}
+
+.myProfile .skills .mySkills .rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myProfile .skills .mySkills span {
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+.myProfile .skills .mySkills .bar {
+    height: 15px;
+    width: 100%;
+    background: chocolate;
+    position: relative;
+}
+
+.myProfile .skills .mySkills .bar ::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: seagreen;
+}
+
+.myProfile .skills .mySkills .java {
+    width: 80%;
+}
+
+.myProfile .skills .mySkills .cSharp {
+    width: 85%;
+}
+
+.myProfile .skills .mySkills .asp {
+    width: 55%;
+}
+
+.myProfile .skills .mySkills .c {
+    width: 90%;
+}
+
+.myProfile .skills .mySkills .sql {
+    width: 75%;
+}
+
+.myProfile .skills .mySkills .cisco {
+    width: 70%;
+}
+
+.myProfile .skills .mySkills .html {
+    width: 65%;
+}
+
+.myProfile .skills .mySkills .css {
+    width: 55%;
+}
+
+.myProfile .skills .mySkills .python {
+    width: 60%;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+
+/*This is About me page styling section*/
+
+.about_page {
+    background: url(pexels-pixabay-326333.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.title .about_me,
+p {
+    padding-right: 45px;
+}
+
+.about_page {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about_page h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: seagreen;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.about_page .about .image img {
+    height: 400px;
+    font-weight: 400px;
+    object-fit: cover;
+}
+
+.about_page .about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about_page .about .image {
+    width: 45%;
+}
+
+.about_page .about .title {
+    width: 55%;
+}
+
+.about_page .about .title .about_me {
+    font-size: 25px;
+    font-weight: 700px;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: greenyellow;
+}
+
+.about_page .about .title p {
+    text-align: justify;
+    font-size: 22px;
+    color: greenyellow;
+}
+
+
+/*-------------------------------------------------------*/
+
+
+/*This is contact me page styling*/
+
+.contact_page {
+    background: url(pexels-pixabay-355747.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.contact_page {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_page form {
+    display: flex;
+    height: 60vh;
+    width: 70%;
+    background-color: yellow;
+    border: 1px solid rgb(114, 111, 111);
+}
+
+.left_contact {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right_contact {
+    display: flex;
+    height: 100%;
+    width: 65%;
+    box-sizing: border-box;
+    border-left: 2px solid rgb(73, 71, 71);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mytitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: seagreen;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.name,
+.email {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.name font,
+.email font {
+    font-size: 20px;
+}
+
+.name input,
+.email input {
+    width: 250px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid seagreen;
+    color: seagreen;
+    margin: 13px 2px;
+}
+
+.name input ::placeholder,
+.email input ::placeholder {
+    opacity: 0.2;
+    letter-spacing: 1px;
+}
+
+.name input :focus,
+.email input :focus {
+    border-bottom: 2px solid grey;
+    transition: 0.2s;
+}
+
+.enter_message {
+    display: flex;
+    flex-direction: column;
+    margin: 22px;
+}
+
+.enter_message font {
+    font-size: 20px;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right_contact textarea ::placeholder {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: rgb(7, 161, 74);
+}
+
+.right_contact textarea {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    color: seagreen;
+    font-size: 20px;
+}
+
+.right_contact button {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: rgb(87, 84, 84);
+    background-color: yellowgreen;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 15px;
+    color: rgb(85, 80, 80);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/*-------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+
+/*Responsive website for different screen sizes*/
+
+@media (max-width: 720px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+    }
+    .main_page ul,
+    .welcome,
+    .social_media a {
+        flex-direction: column;
+        text-align: center;
+    }
+}
