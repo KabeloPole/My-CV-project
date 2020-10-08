@@ -144,11 +144,7 @@ nav.sticky {
 }
 
 .social_media a {
-    margin: 15px 25px;
-}
-
-.fa-yahoo {
-    color: purple;
+    margin: 10px 25px;
 }
 
 .fa-instagram {
@@ -369,142 +365,7 @@ p {
 }
 
 
-/*-------------------------------------------------------*/
-
-
-/*This is contact me page styling*/
-
-.contact_page {
-    background: url(pexels-pixabay-355747.jpg);
-    background-size: cover;
-    height: 100vh;
-}
-
-.contact_page {
-    display: flex;
-    height: 90vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact_page form {
-    display: flex;
-    height: 60vh;
-    width: 70%;
-    background-color: yellow;
-    border: 1px solid rgb(114, 111, 111);
-}
-
-.left_contact {
-    display: flex;
-    height: 100%;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-}
-
-.right_contact {
-    display: flex;
-    height: 100%;
-    width: 65%;
-    box-sizing: border-box;
-    border-left: 2px solid rgb(73, 71, 71);
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.mytitle {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: seagreen;
-    font-size: 35px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-.name,
-.email {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
-.name font,
-.email font {
-    font-size: 20px;
-}
-
-.name input,
-.email input {
-    width: 250px;
-    height: 35px;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1px solid seagreen;
-    color: seagreen;
-    margin: 13px 2px;
-}
-
-.name input ::placeholder,
-.email input ::placeholder {
-    opacity: 0.2;
-    letter-spacing: 1px;
-}
-
-.name input :focus,
-.email input :focus {
-    border-bottom: 2px solid grey;
-    transition: 0.2s;
-}
-
-.enter_message {
-    display: flex;
-    flex-direction: column;
-    margin: 22px;
-}
-
-.enter_message font {
-    font-size: 20px;
-    color: grey;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.right_contact textarea ::placeholder {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: rgb(7, 161, 74);
-}
-
-.right_contact textarea {
-    height: 50px;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-    color: seagreen;
-    font-size: 20px;
-}
-
-.right_contact button {
-    height: 55px;
-    width: 100%;
-    outline: none;
-    border: rgb(87, 84, 84);
-    background-color: yellowgreen;
-    font-weight: bold;
-    margin: 0px;
-    font-size: 15px;
-    color: rgb(85, 80, 80);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-
-/*-------------------------------------------------------------------------
+/*----------------------------------------------------------------------------
 ------------------------------------------------------------------------------*/
 
 
@@ -517,8 +378,20 @@ p {
     }
     .main_page ul,
     .welcome,
-    .social_media a {
+    .welcome a,
+    .myProfile .left_heading {
         flex-direction: column;
         text-align: center;
+    }
+    .social_media,
+    .mySkills {
+        flex-direction: row;
+        text-align: left;
+    }
+    .myLogo {
+        margin-bottom: 20px;
+    }
+    .welcome a {
+        align-items: center;
     }
 }
